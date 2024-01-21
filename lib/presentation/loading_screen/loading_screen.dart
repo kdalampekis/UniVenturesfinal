@@ -1,0 +1,5 @@
+import 'bloc/loading_bloc.dart';import 'models/loading_model.dart';import 'package:flutter/material.dart';import 'package:kwstas_s_application2/core/app_export.dart';class LoadingScreen extends StatelessWidget {const LoadingScreen({Key? key}) : super(key: key);
+
+static Widget builder(BuildContext context) { return BlocProvider<LoadingBloc>(create: (context) => LoadingBloc(LoadingState(loadingModelObj: LoadingModel()))..add(LoadingInitialEvent()), child: LoadingScreen()); } 
+@override Widget build(BuildContext context) { return BlocBuilder<LoadingBloc, LoadingState>(builder: (context, state) {return SafeArea(child: Scaffold(backgroundColor: theme.colorScheme.primary, body: Container(width: double.maxFinite, padding: EdgeInsets.symmetric(horizontal: 79.h), child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.center, children: [SizedBox(height: 5.v), CustomImageView(imagePath: ImageConstant.imgMaskGroupOnprimary, height: 226.v, width: 260.h)]))));}); } 
+ }

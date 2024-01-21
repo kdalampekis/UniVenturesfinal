@@ -1,0 +1,5 @@
+import 'package:equatable/equatable.dart';import 'package:flutter/material.dart';import '/core/app_export.dart';import 'package:kwstas_s_application2/presentation/setup_your_account_organization_two_screen/models/setup_your_account_organization_two_model.dart';part 'setup_your_account_organization_two_event.dart';part 'setup_your_account_organization_two_state.dart';/// A bloc that manages the state of a SetupYourAccountOrganizationTwo according to the event that is dispatched to it.
+class SetupYourAccountOrganizationTwoBloc extends Bloc<SetupYourAccountOrganizationTwoEvent, SetupYourAccountOrganizationTwoState> {SetupYourAccountOrganizationTwoBloc(SetupYourAccountOrganizationTwoState initialState) : super(initialState) { on<SetupYourAccountOrganizationTwoInitialEvent>(_onInitialize); }
+
+_onInitialize(SetupYourAccountOrganizationTwoInitialEvent event, Emitter<SetupYourAccountOrganizationTwoState> emit, ) async  { emit(state.copyWith(notStudentController: TextEditingController())); } 
+ }

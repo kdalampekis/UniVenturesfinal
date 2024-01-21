@@ -1,0 +1,6 @@
+import 'package:equatable/equatable.dart';import 'package:flutter/material.dart';import '/core/app_export.dart';import 'package:kwstas_s_application2/presentation/facebook_visiblepassword_login_screen/models/facebook_visiblepassword_login_model.dart';part 'facebook_visiblepassword_login_event.dart';part 'facebook_visiblepassword_login_state.dart';/// A bloc that manages the state of a FacebookVisiblepasswordLogin according to the event that is dispatched to it.
+class FacebookVisiblepasswordLoginBloc extends Bloc<FacebookVisiblepasswordLoginEvent, FacebookVisiblepasswordLoginState> {FacebookVisiblepasswordLoginBloc(FacebookVisiblepasswordLoginState initialState) : super(initialState) { on<FacebookVisiblepasswordLoginInitialEvent>(_onInitialize); on<ChangePasswordVisibilityEvent>(_changePasswordVisibility); }
+
+_changePasswordVisibility(ChangePasswordVisibilityEvent event, Emitter<FacebookVisiblepasswordLoginState> emit, ) { emit(state.copyWith(isShowPassword: event.value)); } 
+_onInitialize(FacebookVisiblepasswordLoginInitialEvent event, Emitter<FacebookVisiblepasswordLoginState> emit, ) async  { emit(state.copyWith(phoneController: TextEditingController(), passwordController: TextEditingController(), isShowPassword: true)); } 
+ }

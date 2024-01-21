@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24324574894",
+    "project_id": "steel-binder-411400",
+    "storage_bucket": "steel-binder-411400.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24324574894:android:cd0065894f7fc49be6e73f",
+        "android_client_info": {
+          "package_name": "com.kwstassapplication.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIMaJs2JOWZdBc0ZnUG3_c_Ag_GrhEc04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
